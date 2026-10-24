@@ -724,6 +724,22 @@ Visualization and logging observe the processing results without controlling the
 
 Avoid tightly coupling the GUI, capture system, and detection logic.
 
+## 7.9 Cross-Platform Compatibility Strategy
+
+The OpenCV Geometry Dash Bot will be designed for eventual support on both Linux and Windows.
+
+All computer-vision processing, geometry calculations, jump-decision logic, and desktop UI behavior should remain independent of operating-system-specific APIs.
+
+Live screen capture and automated input will use small, interchangeable platform backends. Hyprland/Linux will be implemented first, followed by Windows.
+
+The initial offline vision milestone should be portable across Linux and Windows without code changes.
+
+Cross-platform support must be validated through practical testing. A platform will not be advertised as fully supported until its capture, input automation, and relevant integration behavior have been verified.
+
+Docker will not be introduced as a solution to desktop compatibility, since containers do not automatically provide access to host-specific capture, input, or window-management APIs.
+
+**Learning-first development remains mandatory:** Codex must introduce abstractions only when they become necessary, guide the developer through their implementation, and obtain approval before progressing to subsequent tasks.
+
 ---
 
 # 8. Development Milestones
