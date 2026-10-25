@@ -1,6 +1,6 @@
 # OpenCV Geometry Dash Bot
 
-> 🚧 **Work in Progress — Planning Phase**
+> 🚧 **Work in Progress — Implementation Phase**
 
 A Python project exploring computer vision and game automation using OpenCV.
 
@@ -28,9 +28,11 @@ The bot will use image processing to identify spikes and rectangular blocks, est
 
 ## Current Status
 
-**Phase: Planning and Requirements**
+**Phase: Milestone 1 — Offline Computer Vision**
 
-The project is currently focused on defining user stories, acceptance criteria, and UI mockups before implementation begins.
+Implementation has started with offline screenshot loading. The application can load a saved gameplay screenshot, report its dimensions, display it for visual inspection, and report loading failures.
+
+Next steps focus on geometry calculations and experiments with block, spike, and player detection. Live capture, automatic jumping, and the monitoring UI are planned for later milestones.
 
 ## Learning Objectives
 
